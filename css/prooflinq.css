@@ -1,0 +1,326 @@
+/* Feedback Tool Styles */
+body.prooflinq-active {
+    cursor: crosshair !important;
+}
+
+#prooflinq-feedback-form {
+    position: fixed;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+    z-index: 999999;
+    width: 300px;
+    max-height: 90vh;
+    overflow-y: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.prooflinq-form-header {
+    position: sticky;
+    top: 0;
+    background: white;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #ddd;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.prooflinq-form-header h3 {
+    margin: 0;
+    font-size: 16px;
+}
+
+.prooflinq-close {
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 0;
+    color: #666;
+}
+
+.prooflinq-form-group {
+    margin-bottom: 15px;
+}
+
+.prooflinq-form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+.prooflinq-form-group input,
+.prooflinq-form-group textarea,
+.prooflinq-form-group select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.prooflinq-form-group textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+.prooflinq-form-footer {
+    position: sticky;
+    bottom: 0;
+    background: white;
+    padding-top: 15px;
+    margin-top: 15px;
+    border-top: 1px solid #ddd;
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    z-index: 1;
+}
+
+.prooflinq-cancel,
+.prooflinq-submit {
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+}
+
+.prooflinq-cancel {
+    background: #f1f1f1;
+    color: #333;
+}
+
+.prooflinq-submit {
+    background: #2271b1;
+    color: white;
+}
+
+.prooflinq-marker {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: red;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    z-index: 999998;
+}
+
+/* Admin bar toggle button */
+#wp-admin-bar-prooflinq-toggle .ab-item {
+    cursor: pointer !important;
+    color: #fff !important;
+}
+
+#wp-admin-bar-prooflinq-toggle:hover .ab-item {
+    background-color: #32373c !important;
+    color: #00b9eb !important;
+}
+
+body.prooflinq-active #wp-admin-bar-prooflinq-toggle .ab-item {
+    color: #00b9eb !important;
+}
+
+/* Add to existing CSS */
+#prooflinq-category {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+
+/* Add category-specific colors */
+.category-bug {
+    color: #dc3545;
+}
+
+.category-feature {
+    color: #28a745;
+}
+
+.category-improvement {
+    color: #007bff;
+}
+
+.category-general {
+    color: #6c757d;
+}
+
+/* Add specific styles for the category select */
+.prooflinq-form-group select {
+    background-color: white;
+    height: 35px;
+}
+
+/* Style the select on hover */
+.prooflinq-form-group select:hover {
+    border-color: #999;
+}
+
+/* Style the select when focused */
+.prooflinq-form-group select:focus {
+    border-color: #2271b1;
+    box-shadow: 0 0 0 1px #2271b1;
+    outline: 2px solid transparent;
+}
+
+/* Add to existing CSS */
+.prooflinq-submit.success {
+    background-color: #28a745 !important;
+    cursor: default;
+}
+
+/* Success message styles */
+.prooflinq-success {
+    text-align: center;
+    padding: 20px;
+}
+
+.prooflinq-success .success-icon {
+    font-size: 48px;
+    color: #28a745;
+    margin-bottom: 15px;
+}
+
+.prooflinq-success h3 {
+    color: #28a745;
+    margin: 0 0 10px 0;
+}
+
+.prooflinq-success p {
+    color: #666;
+    margin: 0;
+}
+
+/* Error message styles */
+.prooflinq-error {
+    background-color: #fff2f0;
+    border: 1px solid #ffccc7;
+    border-radius: 4px;
+    padding: 10px;
+    margin-bottom: 15px;
+    color: #dc3545;
+}
+
+/* Add to existing CSS */
+.prooflinq-registration-form {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 30px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.prooflinq-registration-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.prooflinq-registration-header h2 {
+    margin: 0 0 10px;
+    color: #1d2327;
+}
+
+.prooflinq-registration-header p {
+    color: #646970;
+    margin: 0;
+}
+
+#prooflinq-register-form .prooflinq-form-group {
+    margin-bottom: 20px;
+}
+
+#prooflinq-register-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+#prooflinq-register-form input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+#prooflinq-register-form .prooflinq-form-footer {
+    text-align: center;
+}
+
+#prooflinq-register-form button {
+    min-width: 120px;
+}
+
+/* Add to existing CSS */
+#wp-admin-bar-prooflinq-toggle.unauthorized .ab-item {
+    opacity: 0.5;
+    cursor: not-allowed !important;
+}
+
+.prooflinq-feedback-button {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    z-index: 999997;
+}
+
+.prooflinq-feedback-button button {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 16px;
+    background: #2271b1;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: all 0.2s ease;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.prooflinq-feedback-button button:hover {
+    background: #135e96;
+}
+
+body.prooflinq-active .prooflinq-feedback-button button {
+    background: #dc3545;
+}
+
+body.prooflinq-active .prooflinq-feedback-button button:hover {
+    background: #c82333;
+}
+
+.prooflinq-feedback-button .dashicons {
+    font-size: 18px;
+    width: 18px;
+    height: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.prooflinq-form-group .description {
+    font-size: 12px;
+    color: #666;
+    margin: 5px 0 0;
+}
+
+.prooflinq-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 999998;
+    display: none;
+} 
