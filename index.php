@@ -1,11 +1,10 @@
 <?php
 /**
- * Plugin Name: Prooflinq Basic
+ * Plugin Name: Prooflinq
  * Plugin URI: https://prooflinq.com
  * Description: WordPress design and creative feedback tool for freelancers and agencies.
  * Version: 1.0.0
- * Author: Prooflinq
- * Author URI: https://prooflinq.com
+ * Author: Prooflinq - victorayala
  * Text Domain: prooflinq
  * License: GPL v2 or later
  */
